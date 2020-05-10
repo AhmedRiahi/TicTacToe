@@ -1,4 +1,4 @@
 package com.tictactoe.kernel;
 
-public class GameBoard {
+public class GameJudge {
 }
