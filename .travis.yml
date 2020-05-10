@@ -6,4 +6,4 @@ addons:
 
 script:
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install
-  - sonar-scanner -Dsonar.login=${8e9dc4e61a6dd807bdc32ac392c037e48d3870c2}
+  - sonar-scanner -Dsonar.login=8e9dc4e61a6dd807bdc32ac392c037e48d3870c2
