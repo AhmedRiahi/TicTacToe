@@ -3,8 +3,7 @@ language: java
 addons:
   sonarcloud:
     organization: "ahmedriahi-github"
-    token:
-      secure: 8e9dc4e61a6dd807bdc32ac392c037e48d3870c2
+
 script:
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install
-  - sonar-scanner
+  - sonar-scanner -Dsonar.login=${8e9dc4e61a6dd807bdc32ac392c037e48d3870c2}
