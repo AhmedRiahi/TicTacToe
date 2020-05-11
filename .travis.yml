@@ -8,9 +8,10 @@ addons:
 
 script:
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install
-  - sonar-scanner --debug
+  - sonar-scanner
 
 deploy:
   provider: heroku
+  app: the-tic-tac-toe
   api_key:
     secure: "PRK1+/m64g/e2bGpmWQYbhMTF7UkqtzVfivEHvNVhJXNdnyTFOuZbB1dTDFXmmcIyXYDpuB6L4I1H4DM4sxgKQSghF90uw92zEszJ+fSU6FBp6vdCbrlvYzJH2G+kTcTLrpkKV5w6SW3AQZnEYgFrLS0FbAbUX0aCZiyL6zk4ygOy8bABl/rPGb1DAcXUfogpoFoYhawnfOQ09hV3duSClum4hx+M3d5GQYcPGo1YO72FrjsYBy8l97i5UoA6kjEkof/ypVG/o58M5XOn91s5THt6tpZ8b9mFDRHTZtMAekHW7I3fBhJhddoZ1XfzhGkU3NLKgfV01DoDsLNMyu+XyZ1xpKpLe0y8+6o1csGaTP1PiBE8PuxpAcSAC9cKdzVIXDm0t4YDllnhoG9F89CkfITwVDB9dUYP+rSYzWkhvDpJSZkm0Dzi2D2lYIvmq6TUZ/wQv+VArge+FtCkL8M1S1ly1rN/6X2gyhV//DfKAbUApAXtKOr9plbfS5BAF8yqTDfKi/dd497vEesoh23R4Irm8BilTDPOEZ0qmq4ce0CF7MHyi3eyeF7bDhCoQ40cADqwJYa2CIB6SuB6pX2IRVguhZ5N/5j65+iAD5XXtWOumWoFYVCALKBmxKnnsYQ7iT8G22E4BAC6J7zAwm38iA/GiG3YjTgpLHxoTY7p7U="
