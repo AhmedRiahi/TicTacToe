@@ -7,7 +7,7 @@ import com.tictactoe.kernel.model.GameSession;
 
 public class GameInitializer {
 
-    private static final GameInitializer INSTANCE = new GameInitializer();
+    private final static GameInitializer INSTANCE = new GameInitializer();
 
     private GameInitializer(){}
 
